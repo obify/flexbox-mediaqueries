@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;/*helps to calculate the right width even when margin and padiing specified*/
+}
+.container{
+    width: 100%;
+    background-color: rgb(199, 209, 168);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.container div{
+    padding: 15px;
+    border: 1px solid red;
+    /* width: 30%; */
+    flex-basis: 30%;
+}
+.box-1{
+    background-color: orange;
+}
+.box-2{
+    background-color: rgb(21, 226, 226);
+}
+.box-3{
+    background-color: blueviolet;
+}
+
+/* .box-1{
+    flex: 1;
+}
+.box-2{
+    flex: 2;
+}
+.box-3{
+    flex: 1;
+} */
+
+@media (max-width: 768px){
+    .container{
+        flex-direction: column;
+    }
+}
