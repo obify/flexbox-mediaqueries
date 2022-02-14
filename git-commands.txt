@@ -1,0 +1,6 @@
+1. git init
+2. git add .
+3. git commit -m "initial commit"
+4. git remote add origin https://github.com/obify/flexbox-mediaqueries.git
+5. git remote set-url origin https://obify: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@github.com/obify/flexbox-mediaqueries.git
+6. git push --set-upstream origin master
