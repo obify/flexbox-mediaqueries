@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 80%;
+    border: 1px solid blue;
+    color: white;
+    margin: 60px auto;/*brings it center horizontally*/
+    display: grid;
+    grid-template-rows: 120px 120px;/*create 2 rows each of height 120px*/
+    grid-template-columns: 1fr 1fr 1fr;/*create 3 columns each of width 120px/ 1fr fractional unit occupies whole width/height*/
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+}
+.container1{
+    width: 80%;
+    border: 1px solid blue;
+    color: white;
+    margin: 60px auto;/*brings it center horizontally*/
+    display: grid;
+    grid-template-rows: repeat(2, 120px);/*create 2 rows each of height 120px*/
+    /*grid-template-columns: repeat(3, 120px);create 3 columns each of width 120px*/
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));/*each column should automatically fit and occupy min-width of 120px and max-width should be full space*/
+    grid-gap: 15px;
+    grid-auto-rows: 120px;
+    /* align-items: center;
+    justify-items: center; */
+}
+.box-1{
+    background-color: aqua;
+}
+.box-2{
+    background-color: blue;
+    /* grid-column: 1/-1; */
+}
+.box-3{background-color: orange;}
+.box-4{background-color: green;}
+.box-5{
+    background-color: red;
+    /* grid-row-start: 1;
+    grid-row-end: 2; */
+    /* grid-column-start: 2;
+    grid-column-end: 3; */
+    /* grid-row: 1/2;
+    grid-column: 2/-1; */
+}
+.box-6{background-color: grey;}
